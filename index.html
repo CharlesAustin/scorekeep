@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Score Keeper</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body class="h-full">
+        <main class="flex justify-center items-center h-full">
+            <div>
+                <h1 class="text-center font-bold text-3xl">Score Keeper</h1>
+                <div class="flex items-center justify-center py-4">
+                    <span id="playerOneScore" class="text-6xl px-3 rounded-md border-solid border-transparent border-4">0</span>
+                    <span class="mx-5">to</span>
+                    <span id="playerTwoScore" class="text-6xl px-3 rounded-md border-solid border-transparent border-4">0</span>
+                </div>
+                <p id="playerPrompt" class="text-center">Use the buttons below to keep score.</p>
+                <div class="my-5 text-center">
+                    <span>Select max score:</span>
+                    <select
+                        name="gameNums"
+                        id="gameNums"
+                        class="py-2 px-3 rounded-md"
+                    ></select>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button
+                        id="playerOne"
+                        class="py-2 px-4 grow bg-violet-700 transition-colors hover:bg-violet-900 text-white rounded-full"
+                    >
+                        Player One +1
+                    </button>
+                    <button
+                        id="playerTwo"
+                        class="py-2 px-4 grow bg-blue-700 transition-colors hover:bg-blue-900 text-white rounded-full"
+                    >
+                        Player Two +1
+                    </button>
+                    <button
+                        id="resetScores"
+                        class="py-2 px-4 w-full border-solid border-2 border-rose-600 transition-colors hover:bg-rose-600 hover:text-white rounded-full"
+                    >
+                        Reset
+                    </button>
+                </div>
+            </div>
+        </main>
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
